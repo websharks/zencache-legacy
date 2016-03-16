@@ -100,7 +100,7 @@ class MenuPageOptions extends MenuPage
         echo '<div style="clear:both;"></div>'."\n";
         echo '</div>'."\n";
 
-        echo '<div class="plugin-menu-page-notice warning"><p>'.sprintf(__('<strong>Important %1$s Announcement:</strong> %1$s is changing its name to <a href="https://cometcache.com/r/announcing-comet-cache-formerly-zencache/" target="_blank"><strong>Comet Cache</a></strong>! Learn more about this upcoming change <a href="https://cometcache.com/r/announcing-comet-cache-formerly-zencache/" target="_blank">here</a>.', 'zencache'), esc_html(NAME)).'</p></div>'."\n";
+        echo '<div class="plugin-menu-page-notice warning"><p>'.sprintf(__('<a href="https://cometcache.com/r/announcing-comet-cache-formerly-zencache/" target="_blank"><strong>%1$s is now %2$s!</strong></a> To continue receiving plugin updates and bug fixes, please <a href="%3$s" target="_blank">switch to %2$s</a>.', 'zencache'), esc_html(NAME), (IS_PRO ? 'Comet Cache Pro' : 'Comet Cache'), (IS_PRO ? 'https://cometcache.com/r/zencache-pro-migration-faq/' : 'https://cometcache.com/r/zencache-migration-faq/')).'</p></div>'."\n";
 
         /* ----------------------------------------------------------------------------------------- */
 
