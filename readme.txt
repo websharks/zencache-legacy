@@ -1,6 +1,6 @@
 === ZenCache ===
 
-Stable tag: 160222
+Stable tag: 160316
 Requires at least: 4.1
 Tested up to: 4.5-alpha
 Text Domain: zencache
@@ -16,7 +16,11 @@ ZenCache is an advanced WordPress caching plugin inspired by simplicity. Speed u
 
 == Description ==
 
-**~Announcement: ZenCache is changing its name to Comet Cache! [Learn more](https://cometcache.com/r/announcing-comet-cache-formerly-zencache/).~**
+**ANNOUNCEMENT: [ZenCache is now Comet Cache!](https://cometcache.com/r/announcing-comet-cache-formerly-zencache/)**
+
+**To receive plugin updates and bug fixes, please install [Comet Cache](https://wordpress.org/plugins/comet-cache/) instead.**
+
+================================================================
 
 If you care about the speed of your site, ZenCache is one of those plugins that you absolutely MUST have installed :-) ZenCache takes a real-time snapshot (building a cache) of every Page, Post, Category, Link, etc. These snapshots are then stored (cached) intuitively, so they can be referenced later, in order to save all of that processing time that has been dragging your site down and costing you money.
 
@@ -332,6 +336,10 @@ Released under the terms of the [GNU General Public License](http://www.gnu.org/
 - PHP APC Extension not supported. This version of ZenCache does not support the PHP APC Extension. As announced in the previous release, ZenCache / Comet Cache no longer runs with the PHP APC extension enabled as of December 1st, 2015. Please see announcement with further details: [PHP APC Extension No Longer Supported](http://zencache.com/r/php-apc-extension-no-longer-supported/)
 
 == Changelog ==
+
+= v160316 =
+
+- **2nd Announcement: ZenCache has changed its name to Comet Cache!** Learn more about this change [here](https://cometcache.com/r/announcing-comet-cache-formerly-zencache/) and read the [migration instructions](https://cometcache.com/r/zencache-migration-faq/). Note that ZenCache will no longer be maintained after March 31st, 2016.
 
 = v160222 =
 
