@@ -36,9 +36,9 @@ $self->activate = function () use ($self) {
  * @attaches-to `admin_init` hook.
  */
 $self->checkVersion = function () use ($self) {
-    if (!$self->options['comet_cache_notice1_enqueued']) {
-        $self->enqueueMainNotice(sprintf(__('<strong>Important %1$s Announcement:</strong> %1$s is changing its name to <a href="https://cometcache.com/r/announcing-comet-cache-formerly-zencache/" target="_blank"><strong>Comet Cache</a></strong>! Learn more about this upcoming change <a href="https://cometcache.com/r/announcing-comet-cache-formerly-zencache/" target="_blank">here</a>.', 'zencache'), esc_html(NAME)), array('push_to_top' => true, 'class'=>'notice notice-warning', 'persistent_key'=>'comet_cache_notice1'));
-        $self->updateOptions(array('comet_cache_notice1_enqueued' => '1'));
+    if (!$self->options['comet_cache_notice2_enqueued']) {
+        $self->enqueueMainNotice(sprintf(__('<a href="https://cometcache.com/r/announcing-comet-cache-formerly-zencache/" target="_blank"><strong>%1$s is now %2$s!</strong></a> To continue receiving plugin updates and bug fixes, please <a href="%3$s" target="_blank">switch to %2$s</a>.', 'zencache'), esc_html(NAME), (IS_PRO ? 'Comet Cache Pro' : 'Comet Cache'), (IS_PRO ? 'https://cometcache.com/r/zencache-pro-migration-faq/' : 'https://cometcache.com/r/zencache-migration-faq/')), array('push_to_top' => true, 'class'=>'notice notice-warning', 'persistent_key'=>'comet_cache_notice2'));
+        $self->updateOptions(array('comet_cache_notice2_enqueued' => '1'));
     } // This notice MUST go above the version check to show up on new installs.
 
     $prev_version = $self->options['version'];
